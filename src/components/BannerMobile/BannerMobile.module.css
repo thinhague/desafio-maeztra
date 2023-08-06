@@ -1,0 +1,26 @@
+.containerBannerMob{
+  position: relative;
+  width: 100%;
+}
+
+.containerBannerMob :nth-child(2){
+  position: absolute;
+  left: 63px;
+  top: 63px;
+}
+
+.containerBannerMob :nth-child(3){
+  position: absolute;
+  left: 63px;
+  top: 161px;
+}
+
+.containerBannerMob :nth-child(4){
+  position: absolute;
+  left: 63px;
+  top: 228px;
+}
+
+.bannerMob{
+  width: 100%;
+}
