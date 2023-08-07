@@ -19,7 +19,7 @@ export const Modal = () => {
         padding={0}
       >
         <ModalMantine.Overlay />
-        <ModalMantine.Content style={{ overflow: 'initial' }}>
+        <ModalMantine.Content style={{ overflow: 'initial', borderRadius: 0 }}>
         <ModalMantine.CloseButton />
           <ModalMantine.Body>
             <div className={styles['containerModal']}>
