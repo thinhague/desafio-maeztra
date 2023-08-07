@@ -1,6 +1,7 @@
 .containerBrands {
   margin-top: 40px;
 }
+
 .containerBrands h2{
   font-family: var(--primary-font);
   font-size: 24px;
@@ -10,4 +11,10 @@
   text-align: center;
   color:#353535;
   margin-bottom: 24px;
+}
+
+@media (min-width: 1024px){
+  .containerBrands {
+    margin-top: 80px;
+  }
 }

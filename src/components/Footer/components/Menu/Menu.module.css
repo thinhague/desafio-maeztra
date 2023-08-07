@@ -1,0 +1,38 @@
+.contentMenu{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 31px;
+}
+
+.contentMenu h3 {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  color: #353535;
+}
+
+.contentMenu a {
+  font-family: var(--primary-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+}
+
+.contentMenu a:hover{
+  opacity: .6;
+  transition: all 500ms;
+}
+
+.contentMenu > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

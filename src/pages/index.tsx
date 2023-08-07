@@ -8,6 +8,7 @@ import { Tipbar } from '@/components/Tipbar'
 import { Brands } from '@/components/Brands'
 import { Shelf } from '@/components/Shelf'
 import { InfoCard } from '@/components/InfoCard'
+import { Modal } from '@/components/Modal'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +29,7 @@ export default function Home() {
         <Shelf />
         <InfoCard />
         <Footer />
+        <Modal />
       </main>
     </>
   )

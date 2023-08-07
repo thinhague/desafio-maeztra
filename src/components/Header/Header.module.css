@@ -1,3 +1,6 @@
+.header{
+  z-index: 2;
+}
 .topBar{
   align-items: center;
   background-color: #353535;
@@ -6,7 +9,7 @@
   justify-content: center;
 }
 
-.topBar{
+.topBar span{
   font-family: var(--primary-font);;
   font-size: 10px;
   font-weight: 400;
@@ -15,12 +18,17 @@
   color: #ffffff;
 }
 
+.containerHeader{
+  box-shadow: 0px 4px 6px 0px #00000014;
+}
+
 .contentHeader{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 27px 16px;
-  box-shadow: 0px 4px 6px 0px #00000014;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .contentHeader > div{
@@ -34,4 +42,55 @@
 
 .contentHeaderRight{
   gap: 30px;
+}
+
+.containerHeader--stuck{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+}
+
+@media (min-width: 1024px){
+  .topBar span{
+    font-size: 12px;
+  }
+
+  .contentHeaderRight a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .contentHeaderRight a span{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #353535;
+  }
+
+  .contentHeaderRight > :last-child {
+    height: 46px;
+    border-radius: 8px;
+    padding: 0 15px;
+    border: 1px solid #FAA500;
+  }
+
+  .contentHeaderRight a:hover{
+    opacity: .6;
+    transition: all 500ms;
+  }
+
+  .contentHeader{
+    padding: 21px 30px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1600px){
+  .contentHeader{
+    padding: 21px 0;
+  }
 }

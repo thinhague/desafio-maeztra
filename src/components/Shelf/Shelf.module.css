@@ -11,3 +11,9 @@
   text-align: center;
   margin-bottom: 16px;
 }
+
+@media (min-width: 1024px){
+  .containerShelf {
+    margin-top: 80px;
+  }
+}

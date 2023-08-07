@@ -136,6 +136,36 @@ a {
   padding: 0;
 }
 
+.mantine-CloseButton-root{
+  position: absolute;
+  right: 0;
+  top: -25px;
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+}
+
+.mantine-CloseButton-root:hover,
+.mantine-CloseButton-root:focus{
+  background-color: transparent;
+  outline: none;
+}
+
+.mantine-CloseButton-root svg {
+  display: none;
+}
+
+.mantine-CloseButton-root::before{
+  content: "FECHAR";
+  font-family: var(--primary-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}
+
 @media (min-width: 900px){
   .shelf-root{
     padding: 0 30px;

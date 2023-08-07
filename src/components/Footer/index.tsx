@@ -1,6 +1,6 @@
 import styles from './Footer.module.css'
-import { AccordionFooter } from "../AccordionFooter";
-import { Newsletter } from "../Newsletter";
+import { AccordionFooter } from "./components/AccordionFooter";
+import { Newsletter } from "./components/Newsletter";
 import Image from "next/image";
 import facebbok from '../../../assets/footer/facebook.svg'
 import linkedin from '../../../assets/footer/linkedin.svg'
@@ -10,12 +10,15 @@ import visa from '../../../assets/footer/visa.svg'
 import mastercard from '../../../assets/footer/mastercard.svg'
 import vtex from '../../../assets/footer/powered-by-vtex.svg'
 import maeztra from '../../../assets/footer/powered-by-maeztra.svg'
+import { useMediaQuery } from '@mantine/hooks';
+import { Menu } from './components/Menu';
 
 export const Footer = () => {
+  const isMobile = useMediaQuery('(max-width: 1024px)');
   return (
-    <footer>
+    <footer className={styles['footer']}>
       <Newsletter />
-      <AccordionFooter />
+      {isMobile ? <AccordionFooter /> : <Menu />}
       <div className={styles['containerFooter']}>
         <div className={styles['contentFooter']}>
           <div className={styles['containerSocialNetworks']}>

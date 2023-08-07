@@ -1,0 +1,48 @@
+.containerSearchBar{
+  width: 100%;
+  max-width: 791px;
+  position: relative;
+}
+
+.containerSearchBar button {
+  width: 119px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #FAA500;
+  border: none;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFFFF;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.containerSearchBar button:hover{
+  opacity: .9;
+  transition: all 500ms;
+}
+
+.containerSearchBar input {
+  outline: none;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #EFEFEF;
+  border: none;
+  padding: 0 143px 0 24px;
+  width: 100%;
+}
+
+.containerSearchBar input,
+.containerSearchBar input::placeholder{
+  font-family: var(--primary-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #353535;
+}

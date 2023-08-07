@@ -73,6 +73,7 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+  
   .formNewsletter{
     flex: 1;
     gap: 0;
@@ -93,5 +94,12 @@
   }
   .formNewsletter button:hover{
     opacity: .9;
+    transition: all 500ms;
+  }
+}
+
+@media (min-width: 1024px){
+  .containerNewsletter{
+    margin-bottom: 43px;
   }
 }

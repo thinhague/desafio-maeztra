@@ -30,7 +30,8 @@
 @media (min-width: 1024px) {
   .containerInfoCard {
     display: flex;
-    margin: 23px auto 40px;
+    align-items: center;
+    margin: 80px auto;
     gap: 64px;
   }
 

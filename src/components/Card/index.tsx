@@ -1,4 +1,3 @@
-import card01 from '../../../assets/card/card-01.png'
 import styles from './Card.module.css'
 import Image from 'next/image'
 import type { ICard } from '../../types/card'

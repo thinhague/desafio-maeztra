@@ -74,6 +74,7 @@
 
 .containerCardButton button:hover{
   opacity: .9;
+  transition: all 500ms;
 }
 
 .cardSubTitle {
